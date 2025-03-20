@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "be92dacc-4232-4f29-aa6a-a33eb8dfe4eb",
+		"name": "Weather Forcast",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14005510",
+		"_collection_link": "https://crimson-resonance-679749.postman.co/workspace/pratap~01ccb2bd-c299-4f2a-bc2c-2fb28fad1322/collection/14005510-be92dacc-4232-4f29-aa6a-a33eb8dfe4eb?action=share&source=collection_link&creator=14005510"
+	},
+	"item": [
+		{
+			"name": "GET Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://faux-api.com/api/v1/wheatherforcast_9565354393806027"
+			},
+			"response": []
+		},
+		{
+			"name": "GET  Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://faux-api.com/api/v1/wheatherforcast_9565354393806027/1"
+			},
+			"response": []
+		},
+		{
+			"name": "POST  Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n            \"city\": \"Gujrat\",\r\n            \"forecast\": \"smoky\",\r\n            \"temperature\": 19.6,\r\n            \"humidity\": 15.6,\r\n            \"weather\": \"fogy\",\r\n            \"wind_speed\": \"11m/h\"\r\n        }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://faux-api.com/api/v1/wheatherforcast_9565354393806027"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n            \"city\": \"Delhi\",\r\n            \"forecast\": \"smoky\",\r\n            \"temperature\": 19.6,\r\n            \"humidity\": 15.6,\r\n            \"weather\": \"fogy\",\r\n            \"wind_speed\": \"11m/h\"\r\n        }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://faux-api.com/api/v1/wheatherforcast_9565354393806027/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://faux-api.com/api/v1/wheatherforcast_9565354393806027/4"
+			},
+			"response": []
+		}
+	]
+}
