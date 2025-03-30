@@ -9,17 +9,17 @@ GET /weather/forecast?city={city}&days={n}
 
 🛠 Tools Used  
 
-Postman for API requests  
+- Postman for API requests  
 
-Newman for automated testing  
+- Newman for automated testing  
 
 
 ✅ Test Cases  
 
-Status Code: 200 OK  
+- Status Code: 200 OK  
 
-Valid JSON response format  
+- Valid JSON response format  
 
-Correct city & forecast data  
+- Correct city & forecast data  
 
-Temperature, humidity, wind speed validation
+- Temperature, humidity, wind speed validation
