@@ -1,20 +1,20 @@
-🌤 Weather Forecast API Testing  
+# 🌤 Weather Forecast API Testing  
 
 This project tests a Weather Forecast API using Faux API, Postman, and Newman.  
 
 
-📌 Endpoints  
+# 📌 Endpoints  
 
 GET /weather/forecast?city={city}&days={n}  
 
-🛠 Tools Used  
+# 🛠 Tools Used  
 
 - Postman for API requests  
 
 - Newman for automated testing  
 
 
-✅ Test Cases  
+# ✅ Test Cases  
 
 - Status Code: 200 OK  
 
